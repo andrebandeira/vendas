@@ -71,7 +71,7 @@
   <table id="TAB18" populated="true" UUID="7d42550a-9e5b-46e2-a438-1664ca00ac25" name="VENDEDOR" objectType="TABLE" physicalName="VENDEDOR" >
    <remarks></remarks>
    <folder id="FOLTAB181" populated="true" name="Columns" physicalName="Columns" type="1">
-    <column id="COL19" populated="true" UUID="90cf24c3-5bc2-4bf2-800b-d8f4a010c953" autoIncrement="false" autoIncrementSequenceName="VENDEDOR_ID_SEQ" defaultValue="" name="ID" nullable="0" physicalName="ID" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="-5" userDefinedTypeUUID="433cc8af-284d-4abb-8ef7-08ebcb34dbf1" >
+    <column id="COL19" populated="true" UUID="90cf24c3-5bc2-4bf2-800b-d8f4a010c953" autoIncrement="true" autoIncrementSequenceName="VENDEDOR_ID_SEQ" defaultValue="" name="ID" nullable="0" physicalName="ID" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="-5" userDefinedTypeUUID="433cc8af-284d-4abb-8ef7-08ebcb34dbf1" >
      <remarks></remarks>
     </column>
     <column id="COL20" populated="true" UUID="4fd12455-21c5-4477-b3c9-1176f9bba2a0" autoIncrement="false" autoIncrementSequenceName="VENDEDOR_EMAIL_seq" defaultValue="" name="EMAIL" nullable="0" physicalName="EMAIL" precision="100" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
