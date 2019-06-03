@@ -3,13 +3,18 @@
 --Criar um banco de dados com o nome vendas
 
 ----- TABELAS
+
+CREATE SEQUENCE public.vendedor_id_seq;
+
 CREATE TABLE public.VENDEDOR (
-                ID BIGINT NOT NULL,
+                ID BIGINT NOT NULL DEFAULT nextval('public.vendedor_id_seq'),
                 EMAIL VARCHAR(100) NOT NULL,
                 NOME VARCHAR(100) NOT NULL,
                 CONSTRAINT vendedor_pk PRIMARY KEY (ID)
 );
 
+
+ALTER SEQUENCE public.vendedor_id_seq OWNED BY public.VENDEDOR.ID;
 
 CREATE UNIQUE INDEX vendedor_unq
  ON public.VENDEDOR
@@ -66,9 +71,6 @@ REFERENCES public.VENDEDOR (ID)
 ON DELETE NO ACTION
 ON UPDATE NO ACTION
 NOT DEFERRABLE;
-
-
-
 
 --- INSERTS INICIAIS
 

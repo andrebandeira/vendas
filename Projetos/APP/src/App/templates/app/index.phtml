@@ -31,6 +31,8 @@
                     </ul>
                 </div>
             </div>
+
+        </div>
     </nav>
     <div id="page-wrapper" class="gray-bg dashbard-1">
         <div class="content-main">
@@ -41,6 +43,11 @@
         </div>
     </div>
 </div>
+
+<div class="sidebar logout-do">
+    <button type="button" id="logout" class="btn btn-lg btn-danger sidebar">Logout</button>
+</div>
+
 <script>
     var token = "<?php echo $this->data()["token"]?>"
 
@@ -71,9 +78,15 @@
             }
         });
     }
+
     $("#dashboard").click(function () {
         openDashboard();
     });
+
+    $("#logout").click(function () {
+        window.location.reload();
+    });
+
 
     $("#cadastrar-vendedor").click(function () {
         $.ajax({
