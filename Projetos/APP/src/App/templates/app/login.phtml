@@ -1,0 +1,134 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Sistema de Gestão de Vendas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Minimal Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <link href="../../../../vendor/css/bootstrap.min.css" rel='stylesheet' type='text/css' />
+    <!-- Custom Theme files -->
+    <link href="../../../../vendor/css/style.css" rel='stylesheet' type='text/css' />
+    <link href="../../../../css/main.css" rel='stylesheet' type='text/css' />
+    <link href="../../../../css/alertify.css" rel='stylesheet' type='text/css' />
+    <link href="../../../../vendor/css/font-awesome.css" rel="stylesheet">
+    <link href="../../../../vendor/alertify/css/alertify.min.css" rel="stylesheet">
+    <link href="../../../../vendor/alertify/css/themes/bootstrap.min.css" rel="stylesheet">
+
+    <script src="../../../../vendor/js/jquery.min.js"> </script>
+    <script src="../../../../vendor/js/bootstrap.min.js"> </script>
+
+    <!-- Mainly scripts -->
+    <script src="../../../../vendor/js/jquery.metisMenu.js"></script>
+    <script src="../../../../vendor/js/jquery.slimscroll.min.js"></script>
+    <!-- Custom and plugin javascript -->
+    <link href="../../../../vendor/css/custom.css" rel="stylesheet">
+    <script src="../../../../vendor/js/custom.js"></script>
+    <script src="../../../../vendor/js/screenfull.js"></script>
+    <script>
+        $(function () {
+            $('#supported').text('Supported/allowed: ' + !!screenfull.enabled);
+
+            if (!screenfull.enabled) {
+                return false;
+            }
+
+
+
+            $('#toggle').click(function () {
+                screenfull.toggle($('#container')[0]);
+            });
+
+
+
+        });
+    </script>
+
+</head>
+<body>
+<div id="conteudo">
+    <div class="login">
+        <h1><a href="index.html">Gestão de Vendas</a></h1>
+        <div class="login-bottom">
+            <h2>Login</h2>
+            <form id="form-login" onsubmit="return false">
+                <div class="col-md-6">
+                    <div class="login-mail">
+                        <input id="email" name="email" type="text" placeholder="Email" required="">
+                        <i class="fa fa-envelope"></i>
+                    </div>
+                    <div class="login-mail">
+                        <input id="senha" name="senha" type="password" placeholder="Senha" required="">
+                        <i class="fa fa-lock"></i>
+                    </div>
+                </div>
+                <div class="col-md-6 login-do">
+                    <label class="hvr-shutter-in-horizontal login-sub">
+                        <input id="entrar" type="submit" value="Entrar">
+                    </label>
+                </div>
+            </form>
+
+
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+</div>
+
+<!---->
+<div class="copy-right">
+    <p> &copy; 2016 Minimal. All Rights Reserved | Design by <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>	    </div>
+<!---->
+<!--scrolling js-->
+<script src="../../../../vendor/js/jquery.nicescroll.js"></script>
+<script src="../../../../vendor/js/scripts.js"></script>
+<script src="../../../../vendor/alertify/alertify.min.js"></script>
+<script src="../../../../vendor/jquery.mask/jquery.mask.min.js"></script>
+<script src="../../../../vendor/js/Chart.js"></script>
+
+<script src="../../../../js/main.js"></script>
+
+<script>
+    $.ajaxSetup({
+        headers: {
+            'token': ''
+        }
+    });
+
+    $('#form-login').submit(function(event){
+        event.preventDefault();
+        let data = $(this).serialize();
+
+        $.ajax({
+            type: "post",
+            url: "logar",
+            data : data,
+            success: function (data) {
+                $("#conteudo").html(data);
+            },
+            error: function (error) {
+                error = error.responseJSON.error;
+                if (error.indexOf("Login") > 0) {
+                    function reload() {
+                        window.location.reload();
+                    }
+
+                    alert(error, reload);
+                } else {
+                    alert(error);
+                }
+            }
+        });
+    });
+</script>
+<!--//scrolling js-->
+</body>
+</html>
+

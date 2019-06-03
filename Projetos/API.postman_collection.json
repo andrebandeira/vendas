@@ -1,0 +1,972 @@
+{
+	"info": {
+		"_postman_id": "2a1d1db6-f2f8-47f2-8ac7-ed1c2a1898ef",
+		"name": "API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "VENDA",
+			"item": [
+				{
+					"name": "LANCAR VENDA",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJVU1VBUklPIjoxLCJJUCI6IjE3Mi4xOS4wLjEifQ.bcwFq4Ewhv2rm-hCz2A3USzSULF7gVPBqCKzOdGdykY",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "token",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "vendedor",
+									"value": "10",
+									"type": "text"
+								},
+								{
+									"key": "valor",
+									"value": "10",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "local.api.com.br:8080/api/venda",
+							"host": [
+								"local",
+								"api",
+								"com",
+								"br"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"venda"
+							],
+							"query": [
+								{
+									"key": "nome",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "email",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "senha",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ATUALIZAR VENDA",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJVU1VBUklPIjoxLCJJUCI6IjE3Mi4xOS4wLjEifQ.bcwFq4Ewhv2rm-hCz2A3USzSULF7gVPBqCKzOdGdykY",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "token",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "vendedor",
+									"value": "22",
+									"type": "text"
+								},
+								{
+									"key": "valor",
+									"value": "200000",
+									"type": "text"
+								},
+								{
+									"key": "data",
+									"value": "2019-05-31 23:00:39",
+									"type": "text"
+								},
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJVU1VBUklPIjoxLCJJUCI6IjE3Mi4xOS4wLjEifQ.bcwFq4Ewhv2rm-hCz2A3USzSULF7gVPBqCKzOdGdykY",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "local.api.com.br:8080/api/venda/1",
+							"host": [
+								"local",
+								"api",
+								"com",
+								"br"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"venda",
+								"1"
+							],
+							"query": [
+								{
+									"key": "vendedor",
+									"value": "22",
+									"disabled": true
+								},
+								{
+									"key": "email",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "senha",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EXCLUIR VENDA",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJVU1VBUklPIjoxLCJJUCI6IjE3Mi4xOS4wLjEifQ.bcwFq4Ewhv2rm-hCz2A3USzSULF7gVPBqCKzOdGdykY",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "token",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "vendedor",
+									"value": "22",
+									"type": "text"
+								},
+								{
+									"key": "valor",
+									"value": "20",
+									"type": "text"
+								},
+								{
+									"key": "data",
+									"value": "2019-05-31 23:00:39",
+									"type": "text"
+								},
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJVU1VBUklPIjoxLCJJUCI6IjE3Mi4xOS4wLjEifQ.bcwFq4Ewhv2rm-hCz2A3USzSULF7gVPBqCKzOdGdykY",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "local.api.com.br:8080/api/venda/1",
+							"host": [
+								"local",
+								"api",
+								"com",
+								"br"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"venda",
+								"1"
+							],
+							"query": [
+								{
+									"key": "vendedor",
+									"value": "22",
+									"disabled": true
+								},
+								{
+									"key": "email",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "senha",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BUSCAR VENDA",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJVU1VBUklPIjoxLCJJUCI6IjE3Mi4xOS4wLjEifQ.bcwFq4Ewhv2rm-hCz2A3USzSULF7gVPBqCKzOdGdykY",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "token",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "local.api.com.br:8080/api/venda/3?",
+							"host": [
+								"local",
+								"api",
+								"com",
+								"br"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"venda",
+								"3"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "email",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "senha",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BUSCAR POR VENDEDOR",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJVU1VBUklPIjoxLCJJUCI6IjE3Mi4xOS4wLjEifQ.bcwFq4Ewhv2rm-hCz2A3USzSULF7gVPBqCKzOdGdykY",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "token",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "local.api.com.br:8080/api/venda/vendedor/22?",
+							"host": [
+								"local",
+								"api",
+								"com",
+								"br"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"venda",
+								"vendedor",
+								"22"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "email",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "senha",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "VENDEDOR",
+			"item": [
+				{
+					"name": "CADASTRAR VENDEDOR",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJVU1VBUklPIjoxLCJJUCI6IjE3Mi4xOS4wLjEifQ.bcwFq4Ewhv2rm-hCz2A3USzSULF7gVPBqCKzOdGdykY",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "token",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nome",
+									"value": "ANDRE BANDEIRA",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "abandeira@live.com",
+									"type": "text"
+								},
+								{
+									"key": "senha",
+									"value": "160607",
+									"type": "text"
+								},
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJVU1VBUklPIjoxLCJJUCI6IjE3Mi4xOS4wLjEifQ.bcwFq4Ewhv2rm-hCz2A3USzSULF7gVPBqCKzOdGdykY",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "local.api.com.br:8080/api/vendedor",
+							"host": [
+								"local",
+								"api",
+								"com",
+								"br"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"vendedor"
+							],
+							"query": [
+								{
+									"key": "nome",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "email",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "senha",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ATUALIZAR VENDEDOR",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJVU1VBUklPIjoxLCJJUCI6IjE3Mi4xOS4wLjEifQ.bcwFq4Ewhv2rm-hCz2A3USzSULF7gVPBqCKzOdGdykY",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "token",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nome",
+									"value": "ANDRE222222",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "abandeira@live.com",
+									"type": "text"
+								},
+								{
+									"key": "senha",
+									"value": "160607",
+									"type": "text"
+								},
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJVU1VBUklPIjoxLCJJUCI6IjE3Mi4xOS4wLjEifQ.bcwFq4Ewhv2rm-hCz2A3USzSULF7gVPBqCKzOdGdykY",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "local.api.com.br:8080/api/vendedor/21",
+							"host": [
+								"local",
+								"api",
+								"com",
+								"br"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"vendedor",
+								"21"
+							],
+							"query": [
+								{
+									"key": "nome",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "email",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "senha",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EXCLUIR VENDEDOR",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJVU1VBUklPIjoxLCJJUCI6IjE3Mi4xOS4wLjEifQ.bcwFq4Ewhv2rm-hCz2A3USzSULF7gVPBqCKzOdGdykY",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "token",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nome",
+									"value": "ANDRE BANDEIRA",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "email",
+									"value": "abandeira@live.com2",
+									"type": "text"
+								},
+								{
+									"key": "senha",
+									"value": "160607",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "token",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "local.api.com.br:8080/api/vendedor/21",
+							"host": [
+								"local",
+								"api",
+								"com",
+								"br"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"vendedor",
+								"21"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "abandeira@live.com2",
+									"disabled": true
+								},
+								{
+									"key": "email",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "senha",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BUSCAR VENDEDORES",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJVU1VBUklPIjoxLCJJUCI6IjE3Mi4xOS4wLjEifQ.bcwFq4Ewhv2rm-hCz2A3USzSULF7gVPBqCKzOdGdykY",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "token",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "local.api.com.br:8080/api/vendedor?",
+							"host": [
+								"local",
+								"api",
+								"com",
+								"br"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"vendedor"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "email",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "senha",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "AUTH",
+			"item": [
+				{
+					"name": "TOKEN",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "admin",
+									"type": "text"
+								},
+								{
+									"key": "senha",
+									"value": "admin",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "local.api.com.br:8080/token",
+							"host": [
+								"local",
+								"api",
+								"com",
+								"br"
+							],
+							"port": "8080",
+							"path": [
+								"token"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "admin",
+									"disabled": true
+								},
+								{
+									"key": "senha",
+									"value": "admin",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "EMAIL",
+			"item": [
+				{
+					"name": "BUSCAR EMAIL",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJVU1VBUklPIjoxLCJJUCI6IjE3Mi4xOS4wLjEiLCJ0aW1lIjoxNTU5NTE0MzA1fQ.8--IShOQerbfZ3rmAppC6qe9dzjArcR4Syq5hqj6rdk",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "token",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "local.api.com.br:8080/api/email?",
+							"host": [
+								"local",
+								"api",
+								"com",
+								"br"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"email"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "email",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "senha",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ATUALIZAR EMAIL",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJVU1VBUklPIjoxLCJJUCI6IjE3Mi4xOS4wLjEiLCJ0aW1lIjoxNTU5NTE0MzA1fQ.8--IShOQerbfZ3rmAppC6qe9dzjArcR4Syq5hqj6rdk",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "token",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "bandeira.utf@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "local.api.com.br:8080/api/email?",
+							"host": [
+								"local",
+								"api",
+								"com",
+								"br"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"email"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "email",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "senha",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ENVIAR EMAIL",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJVU1VBUklPIjoxLCJJUCI6IjE3Mi4xOS4wLjEifQ.bcwFq4Ewhv2rm-hCz2A3USzSULF7gVPBqCKzOdGdykY",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "token",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "local.api.com.br:8080/api/venda/3?",
+							"host": [
+								"local",
+								"api",
+								"com",
+								"br"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"venda",
+								"3"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "email",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "senha",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

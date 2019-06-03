@@ -1,0 +1,255 @@
+<div class="grid-form">
+    <div class="grid-form1">
+        <h3 id="forms-horizontal">Lançar Venda</h3>
+        <form id="form-venda" class="form-horizontal" onsubmit="return false">
+            <div class="form-group">
+                <label for="id-venda" class="col-sm-2 control-label">ID</label>
+                <div class="col-sm-10">
+                    <select name="id-venda" id="id-venda" class="form-control1">
+                        <option name="novo">Novo</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="id-vendedor" class="col-sm-2 control-label">Vendedor</label>
+                <div class="col-sm-10">
+                    <select name="id-vendedor" id="id-vendedor" class="form-control1">
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="valor-venda" class="col-sm-2 control-label hor-form">Valor</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="valor-venda" name="valor-venda" placeholder="Valor" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button id="lancar-venda" class="btn-primary btn">Lançar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="grid-form">
+    <div class="grid-form1">
+        <h3 id="forms-horizontal">Lista de Vendas</h3>
+        <div class="col-md-3 form-group1 group-mail">
+            <label class="control-label ">Data Inicial</label>
+            <input type="date" id="data-inicio" class="form-control1 ng-invalid ng-invalid-required" ng-model="model.date" required="">
+        </div>
+        <div class="col-offset-2 col-md-3 form-group1 group-mail">
+            <label class="control-label ">Data Final</label>
+            <input type="date" id="data-fim" class="form-control1 ng-invalid ng-invalid-required" ng-model="model.date" required="">
+        </div>
+        <div class="col-sm-offset-2 col-2 filtro-periodo" >
+            <button id="buscar-vendas" class="btn-primary btn">Buscar</button>
+        </div>
+        <table id="lista-vendas" class="table">
+            <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Nome</th>
+                <th scope="col">Email</th>
+                <th scope="col">Data da Venda</th>
+                <th scope="col">Valor da Venda</th>
+                <th scope="col">Comissão</th>
+            </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+</div>
+<script>
+    $( document ).ready(function() {
+        var vendas = {};
+        var vendedores = [];
+
+        $('#valor-venda').mask('000.000.000.000.000,00', {reverse: true});
+
+        $('#form-venda').submit(function (event) {
+            event.preventDefault();
+            let form = $(this);
+            let data = form.serialize();
+
+            let idVendedor = $("#id-vendedor").val();
+
+            if (idVendedor == "") {
+                alert("Vendedor não informado. Verifique!");
+                return;
+            }
+
+            $.ajax({
+                type: "post",
+                url: "lancarVenda",
+                data: data,
+                success: function (data) {
+                    let id = $("#id-venda").val();
+                    form[0].reset();
+                    if (id === 'Nova') {
+                        alert('Venda Cadastrada com Sucesso.');
+                    } else {
+                        alert('Venda Atualizada com Sucesso.');
+                    }
+                    buscarVendas();
+                },
+                error: function (error) {
+                    error = error.responseJSON.error;
+                    if (error.indexOf("Login") > 0) {
+                        function reload() {
+                            window.location.reload();
+                        }
+
+                        alert(error, reload);
+                    } else {
+                        alert(error);
+                    }
+                }
+            });
+        });
+
+        $("#id-venda").change(function () {
+            let select = $("#id-venda");
+
+            let venda = vendas[select.val()];
+
+            if (venda) {
+                $("#valor-venda").val(venda.valor);
+                select = $("#id-vendedor");
+
+                let descricao = venda.nome + " (" + venda.email + ")";
+
+                let vendedor = vendedores[descricao];
+
+                select.find('option').prop('selected', false);
+                select.find('option[value="' + vendedor.id + '"]').prop('selected', true);
+
+            } else {
+                $("#valor-venda").val('');
+
+                select.find('option').prop('selected', false);
+                select.find('option[value=\'\']').prop('selected', true);
+            }
+        });
+
+        function adicionarEventoSelecionarLinha() {
+            $("#lista-vendas tbody tr").click(function () {
+                let tr = $(this);
+                let table = tr.parents("table");
+                let alltrs = table.find("tr");
+                alltrs.removeClass("selected");
+                tr.addClass("selected");
+
+                let td = tr.find(".id");
+
+                let select = $("#id-venda");
+
+
+                select.find('option').prop('selected', false);
+                select.find('option[value="' + td.text() + '"]').prop('selected', true);
+                select.change();
+            });
+        }
+
+        function buscarVendas() {
+            let lista = $("#lista-vendas > tbody");
+            let select = $("#id-venda");
+            lista.empty();
+            select.empty();
+            select.append(new Option('Nova', 'Nova'));
+
+            function inserirVenda(element, index, array) {
+                let linha = "<tr>";
+                linha += "<td class='id'>" + element.id + "</td>";
+                linha += "<td>" + element.nome + "</td>";
+                linha += "<td>" + element.email + "</td>";
+                linha += "<td>" + element.data + "</td>";
+                linha += "<td>" + element.valor + "</td>";
+                linha += "<td>" + element.comissao + "</td>";
+                linha += "</tr>";
+                lista.append(linha);
+
+                vendas[element.id] = element;
+
+                select.append(new Option(element.id, element.id));
+            }
+
+            let dataInicio = $("#data-inicio").val();
+            let dataFim = $("#data-fim").val();
+            let data = {
+                "data-inicio": dataInicio,
+                "data-fim": dataFim,
+            };
+
+            $.ajax({
+                type: "post",
+                url: "buscarTodasVendas",
+                data: data,
+                success: function (data) {
+                    data = data.data;
+                    data.forEach(inserirVenda);
+                    adicionarEventoSelecionarLinha();
+                },
+                error: function (error) {
+                    error = error.responseJSON.error;
+                    if (error.indexOf("Login") > 0) {
+                        function reload() {
+                            window.location.reload();
+                        }
+
+                        alert(error, reload);
+                    } else {
+                        alert(error);
+                    }
+                }
+            });
+        }
+
+        buscarVendas();
+
+        $('#buscar-vendas').click(function (event) {
+            buscarVendas();
+        });
+
+        function buscarVendedores() {
+            let select = $("#id-vendedor");
+            select.empty();
+            select.append(new Option('', ''));
+
+            function inserirVendedor(element, index, array) {
+                let select = $("#id-vendedor");
+                let descricao = element.nome + " (" + element.email + ")";
+
+                vendedores[descricao] = element;
+                select.append(new Option(descricao, element.id));
+            }
+
+            $.ajax({
+                type: "post",
+                url: "buscarTodosVendedores",
+                success: function (data) {
+                    data = data.data;
+                    data.forEach(inserirVendedor);
+                },
+                error: function (error) {
+                    error = error.responseJSON.error;
+                    if (error.indexOf("Login") > 0) {
+                        function reload() {
+                            window.location.reload();
+                        }
+
+                        alert(error, reload);
+                    } else {
+                        alert(error);
+                    }
+                }
+            });
+        }
+
+        buscarVendedores();
+    });
+</script>

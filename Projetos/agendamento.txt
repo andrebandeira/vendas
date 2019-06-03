@@ -1,0 +1,10 @@
+docker: curl -X POST http://127.0.0.1/email
+local: curl -X POST http://local.api.com.br:8080/email
+
+Foi configurado para enviar o email todos os dias as 20:20. A hora pode ser alterada acessando o container e executando o seguinte comando: pico /etc/crontab. Você irá acessar o arquivo de configuração do cron.
+
+entrar no container e iniciar o serviço do cron:
+no terminal executar os seguintes comandos:
+	- docker exec -it php bash
+	- service cron start
+

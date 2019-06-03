@@ -1,0 +1,33 @@
+version: "3"
+services:
+  php:
+     image: abandeira/php7.3:v7
+     container_name: php
+     ports:
+         - "8080:80"
+     links:
+         - "db"
+     tty: true
+     volumes:
+      - ./Projetos:/var/www/html
+      - ./VHosts:/etc/apache2/sites-enabled
+      - ./PHP/php.ini:/usr/local/etc/php/conf.d/php.ini
+  db:
+     image: postgres:11.3
+     container_name: db
+     ports:
+         - "5051:5432"
+     environment:
+         POSTGRES_PASSWORD: 123mudar
+     tty: true
+  pgAdmin:
+     image: dpage/pgadmin4
+     container_name: pgAdmin
+     ports:
+         - "5050:80"
+     links:
+         - "db"
+     environment:
+         PGADMIN_DEFAULT_EMAIL: postgres
+         PGADMIN_DEFAULT_PASSWORD: 123mudar
+     tty: true

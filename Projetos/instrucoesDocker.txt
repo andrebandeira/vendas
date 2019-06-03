@@ -1,0 +1,10 @@
+pgadmim: 
+	url: http://127.0.0.1:5050
+	user: postgres
+	pass: 123mudar
+
+Registrar no Hosts (/etc/hosts):
+
+127.0.0.1   local.api.com.br
+127.0.0.1   local.app.com.br
+
