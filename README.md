@@ -34,6 +34,11 @@ Agendar serviço email:
 - service cron start
 - Foi configurado para enviar o e-mail todos os dias as 20:20. A hora pode ser alterada acessando o container e executando o seguinte comando: pico /etc/crontab. Você irá acessar o arquivo de configuração do cron.
 
+Acessar o Sistema:
+- http://local.app.com.br:8080
+- usuario: admin
+- senha: admin
+
 -----------------------------
 Funcionalidade Implementadas
 
