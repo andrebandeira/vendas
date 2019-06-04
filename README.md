@@ -30,9 +30,9 @@ Criar o Banco de Dados:
 - Caso não funcione na pasta vendas/Projetos/BD tem um script de criaçao das tabelas (criacaoBD.sql)
 
 Agendar serviço email:
-	- docker exec -it php bash
-	- service cron start
-	- Foi configurado para enviar o e-mail todos os dias as 20:20. A hora pode ser alterada acessando o container e executando o seguinte comando: pico /etc/crontab. Você irá acessar o arquivo de configuração do cron.
+- docker exec -it php bash
+- service cron start
+- Foi configurado para enviar o e-mail todos os dias as 20:20. A hora pode ser alterada acessando o container e executando o seguinte comando: pico /etc/crontab. Você irá acessar o arquivo de configuração do cron.
 
 -----------------------------
 Funcionalidade Implementadas
