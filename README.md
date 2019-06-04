@@ -57,8 +57,8 @@ Funcionalidade Implementadas
 -----------------------------
 Observações
 
-Na pasta vendas/Projetos tem uma collection do Postman com exemplo de requisições para a API.
-Na pasta vendas/Projetos/BD tem a modelagem do banco de dados.
-Na pasta vendas/Projetos/prints estão os prints das funcionalidade implementadas.
+- Na pasta vendas/Projetos tem uma collection do Postman com exemplo de requisições para a API.
+- Na pasta vendas/Projetos/BD tem a modelagem do banco de dados.
+- Na pasta vendas/Projetos/prints estão os prints das funcionalidade implementadas.
 
 
