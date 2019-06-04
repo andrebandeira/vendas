@@ -12,7 +12,7 @@ Executar o container docker:
 - cd vendas
 - docker-compose up
 
-Cria o banco de dados:
+Criar o banco de dados:
 
 Acessar o phpadmim
 - http://127.0.0.1:5050/
