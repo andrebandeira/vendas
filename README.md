@@ -25,9 +25,9 @@ Registrar o server:
 Criar o Banco de Dados:
 - nome: vendas
 
-- Restaurar o dump:
-- docker exec -i db psql -U postgres -d vendas < backup.sql
-- Caso não funcione na pasta vendas/Projetos/BD tem um script de criaçao das tabelas (criacaoBD.sql)
+Restaurar o dump:
+- docker exec -i db psql -U postgres -d vendas < "backup.sql"
+(Caso não funcione na pasta vendas/Projetos/BD tem um script de criaçao das tabelas (criacaoBD.sql))
 
 Agendar serviço email:
 - docker exec -it php bash
