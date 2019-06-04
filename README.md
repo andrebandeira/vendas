@@ -2,28 +2,32 @@
 Instruções
 
 Clonar o projeto: 
-	- git clone git@github.com:andrebandeira/vendas.git
+- git clone git@github.com:andrebandeira/vendas.git
 
 Registrar no Hosts (/etc/hosts):
-	- 127.0.0.1   local.api.com.br
-	- 127.0.0.1   local.app.com.br
+- 127.0.0.1   local.api.com.br
+- 127.0.0.1   local.app.com.br
 
 Executar o container docker:
-	- cd vendas
-	- docker-compose up
+- cd vendas
+- docker-compose up
 
 Cria o banco de dados:
-	- acessar o phpadmim
-		- http://127.0.0.1:5050/
-			- usuario: postgres
-			- senha: 123mudar
-	- registra o server:
-		- host name/address: db
-	- create database:
-		- nome: vendas
-	- restore dump:
-		- docker exec -i db psql -U postgres -d vendas < backup.sql
-		- Caso não funcione na pasta vendas/Projetos/BD tem um script de criaçao das tabelas (criacaoBD.sql)
+
+Acessar o phpadmim
+- http://127.0.0.1:5050/
+- usuario: postgres
+- senha: 123mudar
+
+Registrar o server:
+- host name/address: db
+
+Criar o Banco de Dados:
+- nome: vendas
+
+- Restaurar o dump:
+- docker exec -i db psql -U postgres -d vendas < backup.sql
+- Caso não funcione na pasta vendas/Projetos/BD tem um script de criaçao das tabelas (criacaoBD.sql)
 
 Agendar serviço email:
 	- docker exec -it php bash
