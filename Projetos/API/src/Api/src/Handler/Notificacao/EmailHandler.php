@@ -7,6 +7,7 @@ namespace Api\Handler\Notificacao;
 use Core\Handler\MainHandler;
 use Core\Json\JsonException;
 use Core\Json\JsonMessage;
+use Core\Repository\Vendas\Config;
 use Core\Repository\Vendas\Venda;
 use Core\Util\MailUtil;
 use Psr\Http\Message\ResponseInterface;
@@ -37,7 +38,7 @@ class EmailHandler extends MainHandler
                 $login, $pass, $smtp, $ssl, $port
             );
 
-            $destinatario = 'abandeira@live.com';
+            $destinatario = Config::email();
             $assunto = 'Relatório de Vendas: ' . $dataAtual;
 
             MailUtil::send(

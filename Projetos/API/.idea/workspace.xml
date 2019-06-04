@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bb32563c-bf0a-4184-b444-efd8e864e218" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../BD/criacaoBD.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../BD/criacaoBD.sql" afterDir="false" />
-    </list>
+    <list default="true" id="bb32563c-bf0a-4184-b444-efd8e864e218" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,24 +28,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Api/src/Handler/Dashboard/ValorVendedor.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="29" column="31" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/autoload/local.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="20" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/autoload/local.php.dist">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="300">
@@ -59,7 +39,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Core/src/Repository/Vendas/Venda.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
+            <state relative-caret-position="4605">
               <caret line="307" column="26" selection-start-line="307" selection-start-column="26" selection-end-line="307" selection-end-column="26" />
             </state>
           </provider>
@@ -77,7 +57,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Api/src/Handler/Dashboard/ValorDia.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
+            <state relative-caret-position="285">
               <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="33" selection-end-column="17" />
             </state>
           </provider>
@@ -92,7 +72,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Api/src/Handler/Dashboard/ComissaoDia.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="293">
@@ -102,9 +82,33 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Api/src/Handler/Notificacao/EmailHandler.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="40" column="37" lean-forward="true" selection-start-line="40" selection-start-column="37" selection-end-line="40" selection-end-column="37" />
+              <folding>
+                <element signature="e#69#98#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Core/src/Repository/Vendas/Config.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="36" column="29" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
+              <folding>
+                <element signature="e#44#67#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Api/src/Handler/Venda/BuscarHandler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
+            <state relative-caret-position="360">
               <caret line="31" column="16" selection-start-line="31" selection-start-column="16" selection-end-line="36" selection-end-column="17" />
               <folding>
                 <element signature="e#63#78#0#PHP" expanded="true" />
@@ -116,7 +120,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Api/src/Handler/Venda/VendedorHandler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="750">
+            <state relative-caret-position="675">
               <caret line="50" column="9" selection-start-line="18" selection-start-column="8" selection-end-line="50" selection-end-column="9" />
               <folding>
                 <element signature="e#63#92#0#PHP" expanded="true" />
@@ -194,11 +198,9 @@
         <option value="$PROJECT_DIR$/src/Api/src/Handler/Vendedor/InserirHandler.php" />
         <option value="$PROJECT_DIR$/src/Api/src/Handler/Vendedor/AtualizarHandler.php" />
         <option value="$PROJECT_DIR$/src/Core/src/Repository/Vendas/Vendedor.php" />
-        <option value="$PROJECT_DIR$/src/Api/src/Handler/Notificacao/EmailHandler.php" />
         <option value="$PROJECT_DIR$/src/Core/src/Util/MailUtil.php" />
         <option value="$PROJECT_DIR$/src/Api/src/Handler/Notificacao/BuscarEmailHandler.php" />
         <option value="$PROJECT_DIR$/src/Api/src/Handler/Notificacao/AtualizarEmailHandler.php" />
-        <option value="$PROJECT_DIR$/src/Core/src/Repository/Vendas/Config.php" />
         <option value="$PROJECT_DIR$/src/Api/src/Handler/Dashboard/VendasDia.php" />
         <option value="$PROJECT_DIR$/src/Api/src/Handler/Dashboard/VendasVendedor.php" />
         <option value="$PROJECT_DIR$/config/routes.php" />
@@ -208,6 +210,8 @@
         <option value="$PROJECT_DIR$/src/Core/src/Repository/Vendas/Venda.php" />
         <option value="$PROJECT_DIR$/src/Api/src/Handler/Dashboard/ValorDia.php" />
         <option value="$PROJECT_DIR$/src/Api/src/Handler/Dashboard/ComissaoDia.php" />
+        <option value="$PROJECT_DIR$/src/Api/src/Handler/Notificacao/EmailHandler.php" />
+        <option value="$PROJECT_DIR$/src/Core/src/Repository/Vendas/Config.php" />
       </list>
     </option>
   </component>
@@ -335,7 +339,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -497,6 +500,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -579,7 +583,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33364000" />
+    <option name="totallyTimeSpent" value="33391000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -592,8 +596,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1915" y="26" width="1930" height="1035" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24200426" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24466951" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -668,7 +673,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/src/Api/src/Handler/Notificacao/EmailHandler.php</url>
-          <line>20</line>
+          <line>21</line>
           <option name="timeStamp" value="65" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
@@ -921,8 +926,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Api/src/Handler/Notificacao/EmailHandler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="46" selection-start-line="46" selection-end-line="46" />
+        <state relative-caret-position="272">
+          <caret line="40" column="37" lean-forward="true" selection-start-line="40" selection-start-column="37" selection-end-line="40" selection-end-column="37" />
           <folding>
             <element signature="e#69#98#0#PHP" expanded="true" />
           </folding>
@@ -941,18 +946,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Api/src/Handler/Notificacao/BuscarEmailHandler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Core/src/Repository/Vendas/Config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="795">
-          <caret line="54" column="9" selection-start-line="54" selection-start-column="9" selection-end-line="54" selection-end-column="9" />
-          <folding>
-            <element signature="e#44#67#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="210">
+          <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -1030,7 +1025,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Api/src/Handler/Venda/VendedorHandler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
+        <state relative-caret-position="675">
           <caret line="50" column="9" selection-start-line="18" selection-start-column="8" selection-end-line="50" selection-end-column="9" />
           <folding>
             <element signature="e#63#92#0#PHP" expanded="true" />
@@ -1040,14 +1035,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Core/src/Repository/Vendas/Venda.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
+        <state relative-caret-position="4605">
           <caret line="307" column="26" selection-start-line="307" selection-start-column="26" selection-end-line="307" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Api/src/Handler/Venda/BuscarHandler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
+        <state relative-caret-position="360">
           <caret line="31" column="16" selection-start-line="31" selection-start-column="16" selection-end-line="36" selection-end-column="17" />
           <folding>
             <element signature="e#63#78#0#PHP" expanded="true" />
@@ -1057,7 +1052,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Api/src/Handler/Dashboard/ValorDia.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
+        <state relative-caret-position="285">
           <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="33" selection-end-column="17" />
         </state>
       </provider>
@@ -1066,6 +1061,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="293">
           <caret line="36" column="40" selection-start-line="36" selection-start-column="40" selection-end-line="36" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Core/src/Repository/Vendas/Config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="36" column="29" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
+          <folding>
+            <element signature="e#44#67#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

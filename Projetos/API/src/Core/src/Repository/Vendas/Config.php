@@ -32,9 +32,9 @@ class Config extends Repository
         $registro = $model->findOne();
 
         if ($registro) {
-            $keyToken = $registro->EMAIL_RELATORIO;
-            if ($keyToken) {
-                return $keyToken;
+            $email = $registro->EMAIL_RELATORIO;
+            if ($email) {
+                return $email;
             }
         }
 

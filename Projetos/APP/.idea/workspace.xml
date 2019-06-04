@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8278793f-8942-498c-81e8-3d10646076cb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../BD/modelagem.architect" beforeDir="false" afterPath="$PROJECT_DIR$/../BD/modelagem.architect" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../API/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../API/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../API/src/Api/src/Handler/Notificacao/EmailHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/../API/src/Api/src/Handler/Notificacao/EmailHandler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../API/src/Core/src/Repository/Vendas/Config.php" beforeDir="false" afterPath="$PROJECT_DIR$/../API/src/Core/src/Repository/Vendas/Config.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,7 +20,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/App/templates/app/index.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="693">
+            <state relative-caret-position="1290">
               <caret line="86" column="33" selection-start-line="86" selection-start-column="33" selection-end-line="86" selection-end-column="33" />
             </state>
           </provider>
@@ -54,7 +56,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/App/templates/app/dashboard.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
+            <state relative-caret-position="105">
               <caret line="7" column="58" selection-start-line="7" selection-start-column="55" selection-end-line="7" selection-end-column="58" />
             </state>
           </provider>
@@ -316,6 +318,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -491,7 +494,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -558,16 +560,18 @@
       <workItem from="1559515468468" duration="2597000" />
       <workItem from="1559518964098" duration="2332000" />
       <workItem from="1559522932267" duration="1390000" />
+      <workItem from="1559607688495" duration="267000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41471000" />
+    <option name="totallyTimeSpent" value="41738000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1915" y="26" width="1930" height="1035" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21588486" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21801706" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -855,10 +859,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/App/templates/app/index.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1290">
+          <caret line="86" column="33" selection-start-line="86" selection-start-column="33" selection-end-line="86" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App/src/Handler/Venda/LancarVendaHandler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/App/src/Handler/Dashboard/ValorVendedorHandler.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App/templates/app/dashboard.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="58" selection-start-line="7" selection-start-column="55" selection-end-line="7" selection-end-column="58" />
         </state>
       </provider>
     </entry>
@@ -887,34 +919,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="24" column="76" selection-start-line="24" selection-start-column="76" selection-end-line="24" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App/src/Handler/Venda/LancarVendaHandler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App/templates/app/index.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="693">
-          <caret line="86" column="33" selection-start-line="86" selection-start-column="33" selection-end-line="86" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App/templates/app/dashboard.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="7" column="58" selection-start-line="7" selection-start-column="55" selection-end-line="7" selection-end-column="58" />
         </state>
       </provider>
     </entry>
